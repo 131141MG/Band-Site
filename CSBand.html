@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSBand</title>
+	<link rel="shortcut icon" href="./img/ik.png">
+	<link rel="stylesheet" href="band.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="navbar">
+		<ul>
+			<a href="#">HOME</a>
+			<a href="#">BAND</a>
+			<a href="#">TOUR</a>
+			<a href="#">CONTACT</a>
+		</ul>
+		<div class="dropdown">
+		<button class="dropbtn">MORE<i class="fa fa-sort-desc"></i></button>
+
+		<div class="drop-content">
+			<li><a href="#">Photos</a></li>
+			<li><a href="#">Videos</a></li>
+			<li><a href="#">Messages</a></li>	
+			<li><a href="#">Gifs</a></li>	
+		</div>
+
+		</div>
+		<button class="dropbtn"><i class="fa fa-search"></i></button>	
+	</div>
+	
+
+	<div class="s-c">
+		<div class="mslides fade">
+			<img src="./ikon/ikb2.jpg" style="width:100%">
+			<div class="text"><h2>Seoul</h2>03.10.2018</div>
+		</div>
+		<div class="mslides fade">
+			<img src="./ikon/ikb1.jpg" style="width:100%">
+			<div class="text"><h2>Osaka</h2>06.10.2018</div>
+		</div>
+		<div class="mslides fade">
+			<img src="./ikon/ikb3.jpg" style="width:100%">
+			<div class="text"><h2>Taipei</h2>09.10.2018</div>
+		</div>		
+	</div>
+
+
+
+	<div class="paragraphs">
+		<h1 style="text-align: center;font-family: Verdana;">YG EXCLUSIVE IKON</h1>
+		<h3 style="text-align: center;font-family: Verdana;"><i>We Love Stage</i></h3>
+		<p>
+			iKon (Hangul: 아이콘), stylized as iKON, is a South Korean boy band formed in 2015 by YG Entertainment. The group was first introduced in the reality survival program WIN: Who is Next as "Team B." After that, Team B went on to appear in the 2014 reality survival program Mix & Match, which determined the final seven-member lineup of iKon: B.I, Bobby, Jinhwan, Ju-ne, Yunhyeong, Donghyuk and Chanwoo.<br>
+
+The group released their debut studio album Welcome Back (2015), which debuted atop the South Korean Gaon Album Chart and produced the number-one singles "My Type", "Apology" and "Dumb & Dumber" and three top-ten singles "Rhythm Ta", "Airplane" and "Anthem", the album was commercially a success, selling 260,000 copies in Asia, and the songs sold 4.8 million copies, which lead the group to win several best new artist awards on major Asia awards, including Mnet Asian Music Awards, Japan Record Award and QQ Music Awards. The following two years, the group released two singles "#WYD" and "New Kids: Begin", and they focused on touring with their first Asia tour, and several Japanese tours. The group's second studio album Return was released on January 25, 2018.
+		</p>	
+	</div>
+
+	<section id="boxes">
+		<div class="members">
+			<div class="mem">
+				<h3>June</h3>
+				<img src="./ikon/pictures/june.jpg" style="width: 35%">
+				<p>Something about the boys</p>
+				
+			</div>
+			<div class="mem">
+				<h3>Bobby</h3>
+				<img src="./ikon/pictures/bby2.jpg" style="width: 40%">
+				<p>Something about the boys</p>
+				
+			</div>
+			<div class="mem">
+				<h3>Song</h3>
+				<img src="./ikon/pictures/yun.jpg" style="width: 40%">
+				<p>Something about the boys</p>
+				
+			</div>
+			
+		</div>
+		
+	</section>
+
+	<section id="heart">
+
+	<div class="tourdates" style="background-color: black;">
+		<p style="text-align: center;font-family: Verdana; color:white; font-size: 30px;">TOUR DATES</p>
+		<p style="text-align: center;font-family: Verdana; color: gray;font-size: 15px;"><i>Remember to book your tickets!</i> </p>
+		<!--<p class="parabox">September <span style="background-color: red">sold out</span></p>
+		<p class="parabox">October <span style="background-color: red">sold out</span></p>
+		<p class="parabox">November</p>
+	-->
+
+	<div class="parabox">
+		<p>September <span style="background-color: red">sold out</span></p>
+		<p>October <span style="background-color: red">sold out</span></p>
+		<p>November</p>
+	</div>
+
+	<div class="places">
+		<div class="eachplace">
+			<img src="./ikon/ik2.jpg">
+			<div class="post">
+			<h3>Seoul</h3>
+			<p>Fri27Nov2019<br>
+				Olympic Stadium Hall. Number of seat are limited so, please book your tickets early.
+			</p>
+			<button id="ticketbtn" onclick="document.getElementById('id01').style.display='block'" style="width: auto;">Buy Tickets</button>
+			
+			</div>		
+		</div>
+		<div class="eachplace">
+			<img src="./ikon/ik1.jpg">
+			<div class="post">
+			<h3>Taipei</h3>
+			<p>Fri27Nov2019<br>
+				Olympic Stadium Hall. Number of seat are limited so, please book your tickets early.
+			</p>
+			<button id="ticketbtn" onclick="document.getElementById('id01').style.display='block'" style="width: auto;">Buy Tickets</button>
+
+			<!--TICKET FORM-->
+			<div id="id01" class="loginbox">
+		<div class="boxlabel" style="background-color:  #009999;" >
+					<span onclick="document.getElementById('id01').style.display='none'" class="boxclose" title="close modal" >&times;</span>
+				<h2><b> <i class="fa fa-suitcase" style="font-size:24px"></i> T i c k e t s</b></h2>	
+				</div>
+
+		<form>
+			<div class="boxlabel animate" action="/active_page.php">
+
+				<div class="formcontainer">	
+					<label>Tickets, $15 per person</label>
+					<input type="text" placeholder="How many?" name="uname">
+					<label>Send To</label>
+					<input type="text" placeholder="Enter Email" name="email">
+					<button id="pay" >P A Y</button>
+					<button id="close">Close</button>
+					<label><span id="need">Need <a href="#">help?</a></span></label>
+					</div>
+
+				</div>
+
+		</form>
+		
+	</div>
+
+
+
+
+
+
+
+			</div>	
+		</div>
+		<div class="eachplace">
+			<img src="./ikon/ik3.jpg">
+			<div class="post">
+			<h3>Osaka</h3>
+			<p>Fri27Nov2019<br>
+				Olympic Stadium Hall. Number of seat are limited so, please book your tickets early.
+			</p>
+			<button id="ticketbtn" onclick="document.getElementById('id01').style.display='block'" style="width: auto;">Buy Tickets</button>
+			
+			</div>		
+		</div>	
+
+	</div>
+		
+	</div>
+	</section>
+
+	<section id="contacts">
+		<div class="divcontact">
+			<h2 style="font-family: Verdana;">CONTACT</h2>
+			<p><i>Fan? Drop a note!</i></p>
+
+			<div class="eachcontact">
+				<i class="fa fa-map-marker" style="width:30px"></i>Seoul,Korea<br>
+				<i class="fa fa-phone" style="width: 30px"></i>Phone: +00151611<br>
+				<i class="fa fa-envelope" style="width"></i>	Email: mail@mail.com<br>	
+			</div>
+
+			<div class="eachcontact">
+				<form action="/action_page.php" target="_blank">
+					<input class="inputspace" type="text" placeholder="Name" required name="Name">
+					<input class="inputspace" type="text" placeholder="Email" reuired name="Email">
+					<input class="inputspace" type="text" placeholder="Messages" required name="Messages">
+					<br>
+					<button class="sendbutton" type="submit">Send</button>
+				</form>	
+			</div>
+		</div>
+		
+	</section>
+	<img src="./ikon/map.jpg" style="width: 100%">
+	<footer>
+		<p> 
+		<i class="fa fa-facebook-official fa-lg"></i>
+		<i class="fa fa-instagram fa-lg"></i>
+		<i class="fa fa-snapchat fa-lg"></i>
+		<i class="fa fa-pinterest fa-lg"></i>
+		<i class="fa fa-twitter fa-lg"></i>
+		<i class="fa fa-linkedin fa-lg"></i>
+		<br><br>
+		Powered By YG Entertainment
+		</p>
+	</footer>
+
+
+	<script>
+		var si=0;
+		showSlides();
+		function showSlides(){
+			var i;
+			var slides = document.getElementsByClassName("mslides");
+
+			for(i=0; i<slides.length; i++)
+			{
+				slides[i].style.display = "none";
+			}
+			si++;
+			if(si > slides.length)
+				{si=1}
+
+			slides[si-1].style.display ="block";
+
+			setTimeout(showSlides, 5000);
+		}
+		
+	</script>
+
+	<!--SCRIPT for the ticket form-->
+	<script>
+  	//get modal
+  	var modal = document.getElementById('id01');
+  	//when the user click anywhere outside of the modal, close it 
+  	window.onclick = function(event){
+  		if(event.target==modal)
+  		{
+  			modal.style.display="none";
+  		}
+  	}
+  </script>
+
+
+
+</body>
+</html>
